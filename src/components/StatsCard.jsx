@@ -1,13 +1,10 @@
-import StatCard from "./StatCard";
-
-function Stats({ stars, downloads, issues }) {
+function StatCard({ value, label }) {
   return (
-    <div className="flex justify-center gap-6 pb-8">
-      <StatCard value={stars} label="Stars" />
-      <StatCard value={downloads} label="Downloads" />
-      <StatCard value={issues} label="Issues reported" />
+    <div className="w-48 rounded-xl bg-[#F3E6D5] py-4 text-center">
+      <p className="text-4xl font-bold">{value}</p>
+      <p className="mt-1 text-lg text-[#000000]">{label}</p>
     </div>
   );
 }
 
-export default Stats;
+export default StatCard;
