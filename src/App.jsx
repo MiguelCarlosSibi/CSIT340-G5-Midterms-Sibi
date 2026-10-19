@@ -1,7 +1,6 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Features from "./components/Features";
-import Contribute from "./components/Contribute";
 import Footer from "./components/Footer";
 
 function App() {
@@ -10,11 +9,6 @@ function App() {
       <Navbar />
       <Hero />
       <Features />
-      <Contribute
-        title="Contribute"
-        description="Maroon UI grows with help from people like you."
-        steps={["Fork the repo", "Make your change", "Open a pull request"]}
-      />
       <Footer />
     </div>
   );
